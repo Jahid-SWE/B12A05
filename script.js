@@ -69,7 +69,6 @@ const callButtons = document.querySelectorAll(".callBtn");
 
 callButtons.forEach((btn) => {
   btn.addEventListener("click", function () {
-    // const card = btn.closest(".card");
     const card = btn.parentNode.parentNode;
 
     const title = card.querySelector(".callTitle").innerText;
