@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5</title>
+    <title>Emergency Hotline</title>
      <!-- fontawesom cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- //  daisyui cdn -->
@@ -11,28 +11,55 @@
     <!-- // tailwindcss cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-   <section class="max-w-[1920px]">
-     <nav class="flex justify-between items-center h-[100px] px-4 md:px-8">
-        <div class="flex items-center space-x-2">
-            <img src="assets/logo.png" class="h-12 w-12" alt="Logo">
-            <h1 class="font-bold text-lg text-[#006747]">Emergency Service</h1>
-        <div class="flex items-center space-x-4">
-            <div class="bg-green-100/50 rounded-full px-4 py-2 flex items-center space-x-1">
-            <span class="text-lg">0</span>
-            <img src="assets/heart.png" class="h-6 w-6" alt="Heart Icon">
+<body class=" ">
+    <!-- Navbar section  start -->
+    <section class="max-w-[1920px]">
+      <navbar class=" bg-white shadow-md px-5 py-2 flex flex-col sm:flex-row  justify-between items-center">
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/logo.png" class="h-[50px] w-[60px] " alt="logo">
+                <h1 class=" text-[#006747] text-2xl font-bold  ">Emergency<br> Service</h1>
+            </div>
+            <div class="flex items-center gap-5 my-10 sm:my-0">
+                <div class="flex items-center gap-2 text-green-600 bg-[#e4f0ea] rounded-full py-[8px] px-3 ">
+                    <span id="heart-icon" class="font-bold text-black ">0</span>
+                    <div class="w-[20px]">
+                        <img class="w-full" src="./assets/heart.png" alt="">
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-green-600 bg-[#e4f0ea] rounded-full py-[8px] px-3 ">
+                    <span id="coin" class=" font-bold text-black "> 100</span>
+                    <div class="w-[24px]">
+                        <img class="w-full" src="./assets/coin.png" alt="">
+                    </div>
+                </div>
+                <button id="copy-btn" class="bg-[#00A63E] text-white font-bold rounded-full  py-[8px] px-5">0 Copy</button>
+            </div>
+      </navbar>
+    </section>
+  
+    <!-- Navbar section  end -->
+
+    <!-- Banner section Start -->
+       
+    <section class=" max-w-[1920px] mx-auto text-center  bg-gradient-to-r from-[#013223] to-[#006747] py-10 px-6  ">
+        <div class="">
+            <img class="mx-auto h-[60px] w-[60px] mb-3" src="./assets/logo-dark.png"  alt="">
+            <h2 class="text-2xl font-bold my-2 text-white">Emergency Service Directory</h2>
+            <p class="text-[#ffffff] text-[10px]">
+                Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+            </p>
         </div>
-        <div class="bg-green-100/50 rounded-full px-4 py-2 flex items-center space-x-1">
-            <span class="text-lg">100</span>
-            <img src="assets/coin.png" class="h-6 w-6" alt="Coin Icon">
-        </div>
-        <a href="#" class="bg-green-600 text-white rounded-full px-6 py-2 font-semibold">
-        <span>2</span>
-        <span class="ml-1">Copy</span>
-        </a>
-        </div>
-  </nav>
-</section>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- main content start -->
+    <main>
+        <section class="bg-[#f5fff6] border-2 border-red-500 max-w-[1920px]  min-h-[100px]">
+
+        </section>
+    </main>
+
+    <!-- main content end -->
     
 </body>
 </html>
